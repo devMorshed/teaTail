@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="./dist/main.css">
 
 </head>
-<body class="font-MyFont m-0 ">
+<body class="font-MyFont m-0 cursor-none ">
 
   <!-- header section -->
-  <header class="header p-10">
+  <header class="header p-10 cursor-pointer">
     <div class="container mx-auto lg:flex gap-20 items-center p-10">
       <div class=" lg:w-1/2 hero-text space-y-8 p-10">
 
@@ -24,7 +24,7 @@
       <div class="hero-img  lg:w-1/2 relative">
         <img class="w-auto" src="./images/banner.png" alt="">
 
-        <div class="img-card absolute shadow-xl bottom-6 z-10 bg-white flex gap-5 p-4 rounded-md items-center">
+        <div class="img-card absolute shadow-xl bottom-6 z-10 bg-white flex gap-5 p-4 rounded-md items-center hover:-translate-y-3 duration-300 ease-in-out">
           <ion-icon class="text-yellow-400 w-8 h-8" name="star"></ion-icon>
           <div class="">
             <h6 class="text-lg font-bold">5.00</h6>
@@ -39,7 +39,7 @@
   <main>
     <!-- feature section -->
 
-    <section class="feature my-10">
+    <section class="feature my-10 cursor-move ">
       <div class="container mx-auto p-10 ">
         <h3 class="sec-heading text-5xl font-extrabold text-center ">Our Featured Products</h3>
         <p class="text-lg w-4/6 mx-auto text-center my-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
@@ -74,7 +74,9 @@
       </div>
     </section>
 
-    <section class="great my-10">
+    <!-- great tea section  -->
+
+    <section class="great my-10 cursor-wait ">
       <div class="container mx-auto bg-slate-50 rounded-lg p-8 ">
 
         <div class=" flex items-center justify-center flex-col lg:flex-row gap-24 ">
@@ -83,17 +85,17 @@
 
             <div class="grid grid-cols-2 grid-rows-3 gap-2">
 
-              <div class="box-1 bg-gradient-to-r from-red-100 to-orange-100  -200 col-span-1 rounded-md"> </div>
+              <div class="box-1 hover:-translate-y-3 duration-300 ease-in-out bg-gradient-to-r from-red-100 to-orange-100  -200 col-span-1 rounded-md"> </div>
       
-              <div class="box-2 bg-amber-50 row-span-2 rounded-md">
+              <div class="box-2 hover:-translate-y-3 duration-300 ease-in-out bg-amber-50 row-span-2 rounded-md">
                 <img class="w-full p-10" src="./images/fresh-1.png" alt="">
               </div>
       
-              <div class="box-3 bg-stone-200 row-span-2 rounded-md">
+              <div class="box-3 hover:-translate-y-3 duration-300 ease-in-out bg-stone-200 row-span-2 rounded-md">
                 <img class="w-full p-10" src="./images/fresh-2.png" alt="">
               </div>
       
-              <div class="box-4 bg-gradient-to-r from-zinc-300 to-zinc-100  col-span-1 rounded-md"></div>
+              <div class="box-4 hover:-translate-y-3 duration-300 ease-in-out bg-gradient-to-r from-zinc-300 to-zinc-100  col-span-1 rounded-md"></div>
             </div>
 
             <!-- <img class="mx-auto w-full lg:w-3/4" src="./images/fresh-1.png" alt=""> -->
@@ -117,27 +119,9 @@
       </div>
     </section>
 
-
-    <!-- <section class="gri-test w-7/12 my-20 p-16 border   mx-auto">
-      <div class="grid grid-cols-2 grid-rows-6 gap-2 text-center ">
-
-        <div class="box-1 bg-zinc-200 col-span-1 rounded-md"> </div>
-
-        <div class="box-2 bg-gray-200 row-span-2 rounded-md">
-          <img class="w-full p-10" src="./images/fresh-1.png" alt="">
-        </div>
-
-        <div class="box-3 bg-gray-400 row-span-2 rounded-md">
-          <img class="w-full p-10" src="./images/fresh-2.png" alt="">
-        </div>
-
-        <div class="box-4 bg-gradient-to-r from-zinc-300 to-zinc-100  col-span-1 rounded-md"></div>
-      </div>
-    </section> -->
-
     <!-- client section -->
 
-    <section class="meet my-20 ">
+    <section class="meet my-20 cursor-crosshair ">
 
       <!-- main container -->
       <div class="container mx-auto rounded-2xl bg-gradient-to-r from-orange-500 to-red-600">
@@ -205,7 +189,7 @@
     </section>
 
 
-    <section class="section-news my-32">
+    <section class="section-news my-32 cursor-progress ">
       <div class="container mx-auto space-y-8 lg:p-10">
         <h2 class="sec-heading text-5xl font-bold text-center">
           News & Events
@@ -254,7 +238,7 @@
     </section>
   </main>
 
-  <footer class=" m-0 p-0 bg-orange-50">
+  <footer class=" m-0 p-0 bg-orange-50 cursor-copy ">
     <section class="footer">
       <div class="container p-10 mx-auto">
 
@@ -306,7 +290,10 @@
             <!-- right-top  -->
             <div class=" px-20  flex items-center justify-between ">
               <div class="text"><p>Ready to get started?</p></div>
-              <div class="btn"><button class="bg-ttorange text-white font-bold p-3 rounded-lg ">Get started?</button></div>
+              <div class="btn">
+                <button class="bg-orange-500 hover:bg-orange-800 duration-300 ease-in-out  text-white font-bold p-3 rounded-lg ">Get Started</button>
+                
+              </div>
             </div>
 
             <!-- right bottom  -->
@@ -325,7 +312,7 @@
                 <h4 class="text-3xl font-bold">Subscribe to our newsletter </h4>
                 <div class="flex items-center">
                   <input class="bg-transparent border-b-2 border-b-black p-2 w-3/4" type="email" name="" id="" placeholder="Email Address">
-                  <ion-icon class="bg-ttorange text-white font-bold text-2xl rounded-full p-1" name="chevron-forward-outline"></ion-icon>
+                  <ion-icon class="bg-orange-400 hover:bg-orange-800 duration-300 ease-in-out  text-white font-bold text-2xl rounded-full p-1" name="chevron-forward-outline"></ion-icon>
 
                 </div>
                 <ul class="space-x-4">
